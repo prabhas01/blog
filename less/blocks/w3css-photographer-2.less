@@ -1,0 +1,73 @@
+.w3css-photographer-2 header p,
+.w3css-photographer-2 h1 {
+  text-transform: uppercase;
+}
+
+.w3css-photographer-2 nav {
+  position: static;
+  transform: translate(0, 0);
+
+  @media (min-width: @tabletWidth) {
+    position: absolute;
+    transform: translate(-50%, 50%);
+  }
+}
+
+.w3css-photographer-2 img {
+  width: 100%;
+  height: auto;
+}
+
+.w3css-photographer-2 header.w3-content {
+  width: 100%;
+  max-width: 1500px;
+}
+
+.js-focus-visible .w3css-photographer-2 .focus-visible {
+  .focusCustom(var(--colorGrey));
+}
+
+.js-focus-visible .w3css-photographer-2 nav .focus-visible {
+  outline-offset: -2px;
+}
+
+.js-focus-visible .w3css-photographer-2 .usr-gallery .focus-visible {
+  outline-offset: 2px;
+}
+
+.w3css-photographer-2 .usr-gallery .w3-image {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.w3css-photographer-2 .usr-gallery .w3-image--show {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 12;
+
+  width: 100%;
+
+  transform: translate(-50%, -50%);
+
+  @media (min-width: @tabletWidth) {
+    width: 60vw;
+  }
+
+  @media (min-width: @desktopWidth) {
+    width: 50vw;
+  }
+}
+
+.w3css-photographer-2 .usr-gallery__overlay {
+  z-index: 11;
+
+  display: block;
+
+  background-color: var(--colorOverlay);
+}
+
+.w3css-photographer-2 .usr-gallery__overlay--hidden {
+  display: none;
+}

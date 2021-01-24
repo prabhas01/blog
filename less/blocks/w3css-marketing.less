@@ -1,0 +1,71 @@
+body.w3css-marketing {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.w3css-marketing h1,
+.w3css-marketing h2,
+.w3css-marketing h3 {
+  font-family: 'Lato', sans-serif;
+  text-transform: capitalize;
+}
+
+.w3css-marketing h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.w3css-marketing img {
+  width: 100%;
+  height: auto;
+}
+
+.w3css-marketing nav {
+  padding: 16px;
+
+  @media (min-width: @tabletWidth) {
+    padding: 0;
+  }
+}
+
+.w3css-marketing .w3-content {
+  max-width: 1100px;
+}
+
+.w3css-marketing .usr-menu {
+  width: 100%;
+
+  @media (min-width: @tabletWidth) {
+    display: block;
+    width: auto;
+  }
+}
+
+.w3css-marketing .usr-burger {
+  position: relative;
+  top: auto;
+  right: auto;
+}
+
+.w3css-marketing .usr-indicator {
+  width: 15px;
+  height: 15px;
+}
+
+.js-focus-visible .w3css-marketing .focus-visible {
+  .focusCustom(var(--colorBlack));
+}
+
+.js-focus-visible .w3css-marketing .usr-menu .focus-visible {
+  outline-offset: -2px;
+}
+
+.js-focus-visible .w3css-marketing button.usr-right-btn.focus-visible,
+.js-focus-visible .w3css-marketing button.usr-left-btn.focus-visible {
+  outline-offset: -4px;
+}
+
+.js-focus-visible .w3css-marketing .usr-pricing h3.focus-visible {
+  .focusCustom(var(--colorWhite));
+}

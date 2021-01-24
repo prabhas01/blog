@@ -1,0 +1,75 @@
+.w3css-architect header {
+  padding-top: 54px;
+}
+
+.w3css-architect .usr-burger {
+  top: 17px;
+}
+
+.w3css-architect .usr-menu {
+  width: 100%;
+
+  @media (min-width: @tabletWidth) {
+    width: auto;
+  }
+}
+
+.w3css-architect .usr-hidden {
+  @media (min-width: @tabletWidth) {
+    display: block;
+  }
+}
+
+.w3css-architect img {
+  width: 100%;
+  height: auto;
+}
+
+.w3css-architect .w3-content {
+  max-width: 1500px;
+}
+
+.w3css-architect main.w3-content {
+  max-width: 1532px;
+}
+
+.w3css-architect .usr-gallery .w3-image {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.w3css-architect .usr-gallery .w3-image--show {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 12;
+
+  width: 100%;
+
+  transform: translate(-50%, -50%);
+
+  @media (min-width: @tabletWidth) {
+    width: 60vw;
+  }
+
+  @media (min-width: @desktopWidth) {
+    width: 50vw;
+  }
+}
+
+.w3css-architect .usr-gallery__overlay {
+  z-index: 11;
+
+  display: block;
+
+  background-color: var(--colorOverlay);
+}
+
+.w3css-architect .usr-gallery__overlay--hidden {
+  display: none;
+}
+
+.js-focus-visible .w3css-architect .usr-gallery .focus-visible {
+  outline-offset: 2px;
+}

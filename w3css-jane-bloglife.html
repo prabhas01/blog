@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Typenote — W3.CSS: Jane Bloglife</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Typenote — W3.CSS: Jane Bloglife">
+  <meta name="keywords"    content="typenote, w3css, templates, jane, bloglife">
+  <meta name="author"      content="Gurov Dmitriy">
+  <meta name="robots"      content="noindex, follow">
+
+  <link rel="preload" href="font/woff2/Oswald-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="font/woff2/OpenSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="font/woff2/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preload" href="https://www.w3schools.com/w3css/4/w3.css"         as="style">
+  <link rel="preload" href="css/style.css"                                    as="style">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+
+
+  <script>document.createElement("picture");</script>
+
+  <script src="js/webp.js"        async></script>
+  <script src="js/picturefill.js" async></script>
+  <!--   <script src="js/lazysizes.js"   async></script> -->
+
+</head>
+
+<body class="w3-light-grey w3css-jane-bloglife">
+
+  <header>
+
+    <h1 class="visually-hidden">Jane Bloglife</h1>
+
+    <a class="skip-link" href="#main">skip-link</a>
+
+    <nav class="w3-bar w3-black w3-hide-small">
+      <h2 class="visually-hidden">Navigation</h2>
+      <a class="w3-bar-item w3-button" href="#"><span class="visually-hidden">Facebook</span><span class="fa fa-facebook-official"></span></a>
+      <a class="w3-bar-item w3-button" href="#"><span class="visually-hidden">Instagram</span><span class="fa fa-instagram"></span></a>
+      <a class="w3-bar-item w3-button" href="#"><span class="visually-hidden">snap-chat</span><span class="fa fa-snapchat"></span></a>
+      <a class="w3-bar-item w3-button" href="#"><span class="visually-hidden">twitter</span><span class="fa fa-twitter"></span></a>
+      <a class="w3-bar-item w3-button" href="#"><span class="visually-hidden">flicker</span><span class="fa fa-flickr"></span></a>
+      <a class="w3-bar-item w3-button" href="#"><span class="visually-hidden">linkeding</span><span class="fa fa-linkedin"></span></a>
+
+      <a class="w3-bar-item w3-button w3-right" href="#"><span class="visually-hidden">search</span><span class="fa fa-search"></span></a>
+    </nav>
+
+    <div class="w3-content">
+
+      <div class="w3-container w3-padding-32 w3-white w3-center">
+        <p class="w3-xxxlarge usr-main-caption" tabindex="0">Jane Bloglife</p>
+        <p class="w3-large">Welcome to the blog of <span class="w3-tag">Jane's world</span></p>
+      </div>
+
+      <div class="w3-display-container usr-main-photo">
+        <picture>
+          <source type="image/webp"
+                  srcset="image/jane.webp">
+
+          <img class="w3-image" src="image/jane.jpg" width="1600" height="1060" loading="lazy" alt="Jane photo">
+        </picture>
+        <div class="w3-display-left w3-padding-large w3-text-white usr-main-photo-caption">
+          <p class="w3-xxlarge w3-wide">Jane's</p>
+          <p class="w3-hide-small w3-jumbo">Fashion Blog</p>
+          <button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off usr-modal-btn" type="button">Subscribe</button>
+        </div>
+      </div>
+
+      <div class="w3-modal">
+        <div class="w3-modal-content  w3-display-container w3-animate-top">
+
+          <button class="w3-button w3-display-topright w3-black w3-large usr-modal-btn-close">
+            <span class="visually-hidden">Close</span>
+            <span class="fa fa-remove"></span>
+          </button>
+
+          <div class="w3-container w3-black w3-padding-large w3-center">
+            <h3 tabindex="0">Subscribe</h3>
+          </div>
+          <p class="w3-container w3-padding-large">Join my mailing list to receive updates on the latest blog posts and other things.</p>
+
+          <form action="#" method="post">
+            <label class="visually-hidden" for="email">Enter e-mail</label>
+            <div class="w3-container w3-padding-large">
+              <input class="w3-input w3-border" id="email" type="email" name="email" placeholder="Enter e-mail" required>
+            </div>
+
+            <div class="w3-container w3-padding-large">
+              <button class="w3-button w3-block w3-red" type="submit">Subscribe</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="w3-content" id="main">
+
+    <div class="w3-row w3-padding-64">
+
+      <div class="w3-col l8 w3-container">
+
+        <article class="w3-white w3-margin-bottom">
+          <div class="w3-container">
+
+            <header class="w3-padding-16 w3-center">
+              <h2 tabindex="0">Title heading</h2>
+              <p>Title description, <time class="w3-text-grey">2020-09-15 9:15</time></p>
+            </header>
+
+            <picture>
+              <source type="image/webp"
+                      srcset="image/girl_hat.webp">
+
+              <img class="w3-image" src="image/girl_hat.jpg" width="600" height="395" loading="lazy" alt="Girl hat">
+            </picture>
+
+            <p>Black lives matter NGO, greenwashing energize, B-corp replicable fairness. Catalyze social return on investment impact investing we must stand up efficient grit. Incubator, black lives matter challenges and opportunities citizen-centered outcomes. Program area, thought provoking thought partnership sustainable relief strategy impact social return on investment. Cultivate, movements, a progress social.</p>
+            <p>Inspire thought partnership challenges and opportunities change-makers green space LGBTQ+ B-corp inspire. Thought partnership; mass incarceration collaborative consumption milestones systems.</p>
+
+            <div class="w3-bar w3-padding-16">
+              <button class="w3-bar-item w3-button w3-mobile w3-white w3-border"><span class="w3-margin-right fa fa-thumbs-up"></span> <span>Like</span></button>
+              <button class="w3-bar-item w3-button w3-mobile w3-right w3-black usr-repl-btn"><span class="w3-margin-right">Replies</span> <span class="w3-tag w3-white">1</span></button>
+            </div>
+            <hr>
+
+            <div class="usr-repl-modal">
+              <div class="w3-row w3-padding-16 w3-animate-left">
+
+                <div class="w3-col m3">
+                  <picture>
+                    <source type="image/webp"
+                            srcset="image/avatar_smoke.webp">
+
+                    <img class="w3-image usr-avatar" src="image/avatar_smoke.jpg" width="200" height="223" loading="lazy" alt="Avatar">
+                  </picture>
+                </div>
+
+                <div class="w3-col m9">
+                  <p><span class="w3-large">George </span><time class="w3-small w3-text-grey">2020-09-15 9:15</time></p>
+                  <p>Great blog post! Following</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="w3-white w3-margin-bottom">
+          <div class="w3-container">
+
+            <header class="w3-padding-16 w3-center">
+              <h2 tabindex="0">Title heading</h2>
+              <p>Title description, <time class="w3-text-grey">2020-09-15 9:15</time></p>
+            </header>
+
+            <picture>
+              <source type="image/webp"
+                      srcset="image/man_hat.webp">
+
+              <img class="w3-image" src="image/man_hat.jpg" width="600" height="395" loading="lazy" alt="Girl hat">
+            </picture>
+
+            <p>Contextualize improve the world resist academic invest dynamic or. Agile; because external partners, design thinking compelling strengthening infrastructure program area replicable. Program areas game-changer and social capital program area impact. Expose the truth save the world because B-corp silo energize incubator. Invest resilient external partners mass incarceration; but engaging initiative.</p>
+            <p>State of play global inspirational collective impact social return on investment. Technology, LGBTQ+, shared vocabulary framework shared vocabulary. Engaging outcomes.</p>
+
+            <div class="w3-bar w3-padding-16">
+              <button class="w3-bar-item w3-button w3-mobile w3-white w3-border"><span class="w3-margin-right fa fa-thumbs-up"></span> <span>Like</span></button>
+              <button class="w3-bar-item w3-button w3-mobile w3-right w3-black usr-repl-btn"><span class="w3-margin-right">Replies</span> <span class="w3-tag w3-white">2</span></button>
+            </div>
+            <hr>
+
+            <div class="usr-repl-modal usr-hidden">
+              <div class="w3-row w3-padding-16 w3-animate-left">
+
+                <div class="w3-col m3">
+                  <picture>
+                    <source type="image/webp"
+                            srcset="image/girl_train.webp">
+
+                    <img class="w3-image usr-avatar" src="image/girl_train.jpg" width="500" height="600" loading="lazy" alt="Avatar">
+                  </picture>
+                </div>
+
+                <div class="w3-col m9">
+                  <p><span class="w3-large">Jane </span><time class="w3-small w3-text-grey">2020-09-15 9:15</time></p>
+                  <p>Great blog post! Following</p>
+                </div>
+
+              </div>
+
+              <div class="w3-row w3-padding-16 w3-animate-left">
+
+                <div class="w3-col m3">
+                  <picture>
+                    <source type="image/webp"
+                            srcset="image/girl.webp">
+
+                    <img class="w3-image usr-avatar" src="image/girl.jpg" width="500" height="600" loading="lazy" alt="Avatar">
+                  </picture>
+                </div>
+
+                <div class="w3-col m9">
+                  <p><span class="w3-large">Mary </span><time class="w3-small w3-text-grey">2020-09-15 9:15</time></p>
+                  <p>Great blog post! Following</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="w3-white w3-margin-bottom">
+          <div class="w3-container">
+
+            <header class="w3-padding-16 w3-center">
+              <h2 tabindex="0">Title heading</h2>
+              <p>Title description, <time class="w3-text-grey">2020-09-15 9:15</time></p>
+            </header>
+
+            <picture>
+              <source type="image/webp"
+                      srcset="image/runway.webp">
+
+              <img class="w3-image" src="image/runway.jpg" width="600" height="395" loading="lazy" alt="Girl hat">
+            </picture>
+
+            <p>Milestones when impact, ecosystem progress. External partners, sustainable expose the truth compelling a we must stand up disrupt. Deep dive humanitarian replicable thought provoking, revolutionary low-hanging fruit effective altruism academic revolutionary. Strategy synergy effective altruism or, grit engaging, resilient triple bottom line. Capacity building communities rubric incubator thought partnership philanthropy.</p>
+            <p>Inclusive greenwashing; program area to collaborate thought partnership. Transparent improve the world, indicators; LGBTQ+ parse families synergy. Game-changer families society.</p>
+
+            <div class="w3-bar w3-padding-16">
+              <button class="w3-bar-item w3-button w3-mobile w3-white w3-border"><span class="w3-margin-right fa fa-thumbs-up"></span> <span>Like</span></button>
+              <button class="w3-bar-item w3-button w3-mobile w3-right w3-black usr-repl-btn"><span class="w3-margin-right">Replies</span> <span class="w3-tag w3-white">3</span></button>
+            </div>
+            <hr>
+
+            <div class="usr-repl-modal usr-hidden">
+              <div class="w3-row w3-padding-16 w3-animate-left">
+
+                <div class="w3-col m3">
+                  <picture>
+                    <source type="image/webp"
+                            srcset="image/girl_mountain.webp">
+
+                    <img class="w3-image usr-avatar" src="image/girl_mountain.jpg" width="500" height="600" loading="lazy" alt="Avatar">
+                  </picture>
+                </div>
+
+                <div class="w3-col m9">
+                  <p><span class="w3-large">Anna </span><time class="w3-small w3-text-grey">2020-09-15 9:15</time></p>
+                  <p>Great blog post! Following</p>
+                </div>
+
+              </div>
+
+              <div class="w3-row w3-padding-16 w3-animate-left">
+
+                <div class="w3-col m3">
+                  <picture>
+                    <source type="image/webp"
+                            srcset="image/boy.webp">
+
+                    <img class="w3-image usr-avatar" src="image/boy.jpg" width="500" height="600" loading="lazy" alt="Avatar">
+                  </picture>
+                </div>
+
+                <div class="w3-col m9">
+                  <p><span class="w3-large">Mark </span><time class="w3-small w3-text-grey">2020-09-15 9:15</time></p>
+                  <p>Great blog post! Following</p>
+                </div>
+
+              </div>
+
+              <div class="w3-row w3-padding-16 w3-animate-left">
+
+                <div class="w3-col m3">
+                  <picture>
+                    <source type="image/webp"
+                            srcset="image/girl_hood.webp">
+
+                    <img class="w3-image usr-avatar" src="image/girl_hood.jpg" width="500" height="600" loading="lazy" alt="Avatar">
+                  </picture>
+                </div>
+
+                <div class="w3-col m9">
+                  <p><span class="w3-large">Demi </span><time class="w3-small w3-text-grey">2020-09-15 9:15</time></p>
+                  <p>Great blog post! Following</p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+
+      <aside class="w3-col l4 w3-container">
+        <h2 class="visually-hidden">Other News</h2>
+
+        <section class="w3-margin-bottom">
+          <h2 class="visually-hidden">Profile</h2>
+          <picture>
+            <source type="image/webp"
+                    srcset="image/avatar_girl2.webp">
+
+            <img class="w3-image w3-grayscale" src="image/avatar_girl2.jpg" width="300" height="160" loading="lazy" alt="Avatar">
+          </picture>
+          <div class="w3-container w3-black">
+            <h3 tabindex="0">My name</h3>
+            <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+          </div>
+        </section>
+
+        <section class="w3-margin-bottom w3-white">
+          <div class="w3-container w3-black">
+            <h2 tabindex="0">Popular Posts</h2>
+          </div>
+          <ul class="w3-ul w3-hoverable">
+            <li>
+              <a class="w3-block" href="#">
+                <picture>
+                  <source type="image/webp"
+                          srcset="image/avatar_smoke.webp">
+
+                  <img class="w3-image w3-left w3-margin-right usr-avatar-min" src="image/avatar_smoke.jpg" width="200" height="223" loading="lazy" alt="man smoke">
+                </picture>
+                <h3>Denim</h3>
+                <p>Sed mattis nunc</p>
+              </a>
+            </li>
+            <li>
+              <a class="w3-block" href="#">
+                <picture>
+                  <source type="image/webp"
+                          srcset="image/bandmember.webp">
+
+                  <img class="w3-image w3-left w3-margin-right usr-avatar-min" src="image/bandmember.jpg" width="255" height="255" loading="lazy" alt="man smoke">
+                </picture>
+                <h3>Sweaters</h3>
+                <p>Praes tinci sed</p>
+              </a>
+            </li>
+            <li>
+              <a class="w3-block" href="#">
+                <picture>
+                  <source type="image/webp"
+                          srcset="image/workshop.webp">
+
+                  <img class="w3-image w3-left w3-margin-right usr-avatar-min" src="image/workshop.jpg" width="300" height="300" loading="lazy" alt="worksho">
+                </picture>
+                <h3>Workshop</h3>
+                <p>Ultricies congue</p>
+              </a>
+            </li>
+            <li>
+              <a class="w3-block" href="#">
+                <picture>
+                  <source type="image/webp"
+                          srcset="image/avatar_smoke.webp">
+
+                  <img class="w3-image w3-left w3-margin-right usr-avatar-min" src="image/avatar_smoke.jpg" width="200" height="223" loading="lazy" alt="man smoke">
+                </picture>
+                <h3>Trends</h3>
+                <p>External strategize</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="w3-white w3-margin-bottom usr-ads">
+          <div class="w3-container w3-black">
+            <h2 tabindex="0">Advertise</h2>
+          </div>
+          <div class="w3-container">
+            <div class="w3-container w3-display-container w3-section w3-light-grey">
+              <span class="w3-display-middle">Your AD Here</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="w3-white w3-margin-bottom">
+          <div class="w3-container w3-black">
+            <h2 tabindex="0">Tag</h2>
+          </div>
+          <div class="w3-container w3-padding-16">
+            <div>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-black">Fashion</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">New York</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">London</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">Hats</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">Norway</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">Sweaters</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">Ideas</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">Deals</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">Accessories</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">News</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">Clothing</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">Shopping</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">Jeans</button>
+              <button class="w3-button w3-small w3-margin-right w3-margin-bottom w3-light-grey">Trends</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="w3-margin-bottom w3-white usr-inspiration">
+          <div class="w3-container w3-black">
+            <h2 tabindex="0">Inspiration</h2>
+          </div>
+          <div class="usr-inspiration-box">
+            <div class="w3-row-padding">
+              <div class="w3-col m6">
+                <picture>
+                  <source type="image/webp"
+                          srcset="image/jeans.webp">
+
+                  <img class="" src="image/jeans.jpg" width="1200" height="800" loading="lazy" alt="Logo">
+                </picture>
+              </div>
+              <div class="w3-col m6">
+                <picture>
+                  <source type="image/webp"
+                          srcset="image/team4.webp">
+
+                  <img class="" src="image/team4.jpg" width="500" height="333" loading="lazy" alt="Logo">
+                </picture>
+              </div>
+            </div>
+            <div class="w3-row-padding">
+              <div class="w3-col m6">
+                <picture>
+                  <source type="image/webp"
+                          srcset="image/team1.webp">
+
+                  <img class="w3-image" src="image/team1.jpg" width="500" height="333" loading="lazy" alt="Logo">
+                </picture>
+              </div>
+              <div class="w3-col m6">
+                <picture>
+                  <source type="image/webp"
+                          srcset="image/avatar_hat.webp">
+
+                  <img class="w3-image" src="image/avatar_hat.jpg" width="500" height="333" loading="lazy" alt="Logo">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="w3-margin-bottom w3-white">
+          <div class="w3-container w3-black">
+            <h2 tabindex="0">Follow Me</h2>
+          </div>
+          <div class="w3-bar w3-large">
+            <a class="w3-bar-item w3-button" href="#"><span class="visually-hidden">Facebook</span><span class="fa fa-facebook-official"></span></a>
+            <a class="w3-bar-item w3-button" href="#"><span class="visually-hidden">Instagram</span><span class="fa fa-instagram"></span></a>
+            <a class="w3-bar-item w3-button" href="#"><span class="visually-hidden">snap chat</span><span class="fa fa-snapchat"></span></a>
+            <a class="w3-bar-item w3-button" href="#"><span class="visually-hidden">twitter</span><span class="fa fa-twitter"></span></a>
+            <a class="w3-bar-item w3-button" href="#"><span class="visually-hidden">flicker</span><span class="fa fa-flickr"></span></a>
+            <a class="w3-bar-item w3-button" href="#"><span class="visually-hidden">LinkedIn</span><span class="fa fa-linkedin"></span></a>
+          </div>
+        </section>
+
+        <section class="w3-margin-bottom w3-white">
+          <div class="w3-container w3-black">
+            <h2 tabindex="0">Subscribe</h2>
+          </div>
+          <div class="w3-container">
+            <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+            <form action="#" method="post">
+              <label class="visually-hidden" for="email-2">Enter e-mail</label>
+              <div class="w3-padding-16">
+                <input class="w3-input w3-border" id="email-2" type="email" name="email-2" placeholder="Enter e-mail" required>
+              </div>
+              <footer class="w3-padding-16">
+                <button class="w3-button w3-block w3-red" type="submit">Subscribe</button>
+              </footer>
+            </form>
+          </div>
+        </section>
+
+      </aside>
+
+    </div>
+
+    <div class="w3-container w3-padding-32">
+      <a class="w3-button w3-mobile w3-black" href="#"><span class="fa fa-arrow-up w3-margin-right"></span> To the top</a>
+    </div>
+
+  </main>
+
+  <footer class="w3-container w3-padding-32 w3-center w3-black">
+
+    <h2 class="visually-hidden">Contacts</h2>
+
+    <p>Go to <a href="index.html">Main</a></p>
+
+    <p>Create by <a href="https://www.typenote.io">Typenote</a></p>
+
+    <p>Powered by <a href="https://www.w3schools.com/w3css/">W3.CSS</a></p>
+
+  </footer>
+
+  <script src="js/default.js"        async></script>
+  <script src="js/janeblog.js"       async></script>
+  <script src="js/focus-visible.js"  async></script>
+
+</body>
+</html>

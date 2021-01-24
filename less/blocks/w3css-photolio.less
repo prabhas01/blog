@@ -1,0 +1,124 @@
+body.w3css-photolio {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.w3css-photolio h1 {
+  text-transform: uppercase;
+}
+
+.w3css-photolio ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.w3css-photolio .usr-nav-box {
+  min-height: 52px;
+  margin: 0 auto;
+}
+
+.w3css-photolio nav {
+  width: 100%;
+}
+
+.w3css-photolio nav a {
+  text-decoration: none;
+}
+
+.w3css-photolio img {
+  width: 100%;
+  height: auto;
+}
+
+.w3css-photolio .w3-content {
+  max-width: 1500px;
+}
+
+.w3css-photolio .usr-burger {
+  top: 16px;
+  right: 16px;
+
+  box-shadow: inset 0 -2px 0 0 var(--colorGrey);
+
+  &::before,
+  &::after {
+    background-color: var(--colorGrey);
+  }
+}
+
+.w3css-photolio .usr-burger--open {
+  animation-name: burgerOpenPhotolio;
+}
+
+.w3css-photolio .usr-burger--close {
+  animation-name: burgerClosePhotolio;
+}
+
+@keyframes burgerOpenPhotolio {
+  0% {
+      box-shadow: inset 0 -2px 0 0 var(--colorGrey);
+    /*border-bottom: 2px solid var(--colorBlack);*/
+  }
+
+  100% {
+      box-shadow: inset 0 -2px 0 0 transparent;
+    /*border-bottom: 2px solid transparent;*/
+  }
+}
+
+@keyframes burgerClosePhotolio {
+  0% {
+      box-shadow: inset 0 -2px 0 0 var(--colorGrey);
+    /*border-bottom: 2px solid var(--colorBlack);*/
+  }
+
+  100% {
+      box-shadow: inset 0 -2px 0 0 transparent;
+    /*border-bottom: 2px solid transparent;*/
+  }
+}
+
+.js-focus-visible .w3css-photolio .focus-visible {
+  .focusCustom(var(--colorGrey));
+}
+
+.js-focus-visible .w3css-photolio .usr-gallery .focus-visible {
+  outline-offset: 2px;
+}
+
+.w3css-photolio .usr-gallery .w3-image {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.w3css-photolio .usr-gallery .w3-image--show {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 12;
+
+  width: 100%;
+
+  transform: translate(-50%, -50%);
+
+  @media (min-width: @tabletWidth) {
+    width: 60vw;
+  }
+
+  @media (min-width: @desktopWidth) {
+    width: 50vw;
+  }
+}
+
+.w3css-photolio .usr-gallery__overlay {
+  z-index: 11;
+
+  display: block;
+
+  background-color: var(--colorOverlay);
+}
+
+.w3css-photolio .usr-gallery__overlay--hidden {
+  display: none;
+}

@@ -1,0 +1,381 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 600px;
+  height: 100vh;
+  min-width: @mobileWidth;
+}
+
+/* только для скринридера */
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* настройки кастомного фокуса */
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.js-focus-visible .focus-visible {
+  .focusCustom(var(--colorBlack));
+}
+
+.js-focus-visible footer .focus-visible {
+  .focusCustom(var(--colorWhite));
+}
+
+.js-focus-visible button.focus-visible {
+  outline-offset: 2px;
+}
+
+/* сслыка пропуска меню */
+
+.skip-link {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  z-index: 100;
+
+  padding: 10px;
+
+  color: var(--colorWhite);
+
+  background-color: var(--colorBlack);
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/*standart tag*/
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+footer {
+  flex-grow: 1;
+}
+
+.usr-show {
+  display: block;
+}
+
+.usr-hidden {
+  display: none;
+}
+
+.usr-main-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.usr-main-page ul a {
+  text-decoration: none;
+}
+
+/*burger*/
+
+.usr-burger {
+  position: absolute;
+  top: 28px;
+  right: 32px;
+  z-index: 10;
+
+  display: block;
+
+  width: 40px;
+  height: 20px;
+  padding: 0;
+
+  border: none;
+  box-shadow: inset 0 -2px 0 0 var(--colorBlack);
+/*  border-bottom: 2px solid var(--colorBlack);*/
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    position: absolute;
+
+    content: '';
+    display: block;
+    height: 2px;
+
+    background-color: var(--colorBlack);
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+
+    width: 100%;
+  }
+
+  &::after {
+    top: 50%;
+    right: 0;
+
+    width: 100%;
+
+    transform: translate(0, -50%);
+  }
+}
+
+.usr-burger--open {
+  animation-name: burgerOpen;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+
+  &::after {
+    animation-name: burgerAfterOpen;
+    animation-duration: 0.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  &::before {
+    animation-name: burgerBeforeOpen;
+    animation-duration: 0.5s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+.usr-burger--close {
+  animation-name: burgerClose;
+  animation-duration: 0.2s;
+  animation-delay: 0.5s;
+  animation-direction: reverse;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+
+  &::after {
+    animation-name: burgerAfterClose;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  &::before {
+    animation-name: burgerBeforeClose;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+  }
+}
+
+@keyframes burgerOpen {
+  0% {
+      box-shadow: inset 0 -2px 0 0 var(--colorBlack);
+    /*border-bottom: 2px solid var(--colorBlack);*/
+  }
+
+  100% {
+      box-shadow: inset 0 -2px 0 0 transparent;
+    /*border-bottom: 2px solid transparent;*/
+  }
+}
+
+@keyframes burgerAfterOpen {
+  0% {
+    width: 100%;
+  }
+
+  25% {
+    width: 100%;
+    transform: translate(0, -50%) rotate(0) scaleX(1);
+  }
+
+  25% {
+    width: 100%;
+    transform: translate(0, -50%) rotate(0) scaleX(1);
+  }
+
+  50% {
+    width: 100%;
+    transform: translate(0, -50%) rotate(0) scaleX(0.6);
+  }
+
+  50% {
+    width: 100%;
+    transform: translate(0, -50%) rotate(0) scaleX(0.6);
+  }
+
+  75% {
+    width: 100%;
+    transform: translate(0, -50%) rotate(0) scaleX(0.6);
+  }
+
+  100% {
+    width: 100%;
+    transform: translate(0, -50%) rotate(45deg) scaleX(0.6);
+  }
+}
+
+@keyframes burgerBeforeOpen {
+  0% {
+    transform: translate(0, 0) rotate(0) scaleX(1);
+  }
+
+  25% {
+    top: 0;
+    transform: translate(0, 0) rotate(0) scaleX(1);
+  }
+
+  25% {
+    top: 0;
+    transform: translate(0, 0) rotate(0) scaleX(1);
+  }
+
+  50% {
+    top: 0;
+    transform: translate(0, 0) rotate(0) scaleX(0.6);
+  }
+
+  75% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(0) scaleX(0.6);
+  }
+
+  75% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(0) scaleX(0.6);
+  }
+
+  100% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(-45deg) scaleX(0.6);
+  }
+}
+
+@keyframes burgerClose {
+  0% {
+      box-shadow: inset 0 -2px 0 0 var(--colorBlack);
+    /*border-bottom: 2px solid var(--colorBlack);*/
+  }
+
+  100% {
+      box-shadow: inset 0 -2px 0 0 transparent;
+    /*border-bottom: 2px solid transparent;*/
+  }
+}
+
+@keyframes burgerAfterClose {
+  0% {
+    width: 100%;
+  }
+
+  25% {
+    width: 100%;
+    transform: translate(0, -50%) rotate(0) scaleX(1);
+  }
+
+  25% {
+    width: 100%;
+    transform: translate(0, -50%) rotate(0) scaleX(1);
+  }
+
+  50% {
+    width: 100%;
+    transform: translate(0, -50%) rotate(0) scaleX(0.6);
+  }
+
+  50% {
+    width: 100%;
+    transform: translate(0, -50%) rotate(0) scaleX(0.6);
+  }
+
+  75% {
+    width: 100%;
+    transform: translate(0, -50%) rotate(0) scaleX(0.6);
+  }
+
+  100% {
+    width: 100%;
+    transform: translate(0, -50%) rotate(45deg) scaleX(0.6);
+  }
+}
+
+@keyframes burgerBeforeClose {
+  0% {
+    transform: translate(0, 0) rotate(0) scaleX(1);
+  }
+
+  25% {
+    top: 0;
+    transform: translate(0, 0) rotate(0) scaleX(1);
+  }
+
+  25% {
+    top: 0;
+    transform: translate(0, 0) rotate(0) scaleX(1);
+  }
+
+  50% {
+    top: 0;
+    transform: translate(0, 0) rotate(0) scaleX(0.6);
+  }
+
+  75% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(0) scaleX(0.6);
+  }
+
+  75% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(0) scaleX(0.6);
+  }
+
+  100% {
+    top: 50%;
+    transform: translate(0, -50%) rotate(-45deg) scaleX(0.6);
+  }
+}

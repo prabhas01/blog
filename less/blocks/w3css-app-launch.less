@@ -1,0 +1,50 @@
+body.w3css-app-launch {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.w3css-app-launch h1,
+.w3css-app-launch h2,
+.w3css-app-launch h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+body.w3css-app-launch.w3-content {
+  max-width: 1500px;
+}
+
+.w3css-app-launch img {
+  widows: 100%;
+  height: auto;
+}
+
+.w3css-app-launch .usr-slide-caption {
+  width: 35%;
+}
+
+.w3css-app-launch .usr-btn-slide {
+  @media (min-width: @tabletWidth) {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+
+    border-radius: 8px;
+
+    transform: translate(0, -50%);
+  }
+}
+
+.js-focus-visible .w3css-app-launch .focus-visible {
+  .focusCustom(var(--colorGreen));
+}
+
+.js-focus-visible .w3css-app-launch header button.usr-modal-btn.focus-visible {
+  .focusCustom(var(--colorBlack));
+  outline-offset: -2px;
+}
+
+.js-focus-visible .w3css-app-launch header button.usr-btn-slide.focus-visible,
+.js-focus-visible .w3css-app-launch a.w3-button.focus-visible {
+  outline-offset: -2px;
+}
